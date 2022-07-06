@@ -10,6 +10,10 @@
 
 help finding the HQ of the Easter Bunny
 
+### Day 2: Bathroom Security
+
+unlock the bathroom of the Easter Bunny HQ
+
 ---
 
 Environment
