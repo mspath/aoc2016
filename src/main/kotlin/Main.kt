@@ -1,3 +1,3 @@
 fun main() {
-    println("Advent of Code 2016")
+    day1.main()
 }
