@@ -5,10 +5,10 @@ import java.io.File
 fun main() {
     val input = File("data/day2/input.txt").readLines()
     breakfast(input)
+    lunch(input)
 }
 
 data class Position(var value: Int) {
-
     fun processInstruction(instruction: Char) {
         when (instruction) {
             'U' -> {
@@ -42,11 +42,54 @@ data class Position(var value: Int) {
     }
 }
 
+data class PositionHex(var value: Int) {
+    fun processInstruction(instruction: Char) {
+        when (instruction) {
+            'U' -> {
+                when (this.value) {
+                    3, 13 -> this.value -= 2
+                    6, 7, 8, 10, 11, 12 -> this.value -= 4
+                }
+            }
+            'D' -> {
+                when (this.value) {
+                    1, 11 -> this.value += 2
+                    2, 3, 4, 6, 7, 8 -> this.value += 4
+                }
+            }
+            'L' -> {
+                when (this.value) {
+                    3, 6, 11, 4, 7, 12, 8, 9 -> this.value -= 1
+                }
+            }
+            'R' -> {
+                when (this.value) {
+                    2, 3, 5, 6, 7, 8, 10, 11 -> this.value += 1
+                }
+            }
+        }
+    }
+
+    fun processInstructions(instructions: String): PositionHex {
+        instructions.toCharArray().forEach { instruction ->
+            this.processInstruction(instruction)
+        }
+        return PositionHex(this.value)
+    }
+}
+
 fun breakfast(input: List<String>) {
-    println(input)
     var position = Position(5)
     input.forEach { instructions ->
         position = position.processInstructions(instructions)
         print(position.value)
+    }
+}
+
+fun lunch(input: List<String>) {
+    var position = PositionHex(5)
+    input.forEach { instructions ->
+        position = position.processInstructions(instructions)
+        print(position.value.toString(16))
     }
 }
