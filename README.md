@@ -22,6 +22,10 @@ help understand a design document.
 
 check the validity of room names.
 
+### Day 5: How About a Nice Game of Chess?
+
+discover a password.
+
 ---
 
 Environment
