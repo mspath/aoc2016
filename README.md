@@ -18,6 +18,10 @@ unlock the bathroom of the Easter Bunny HQ
 
 help understand a design document.
 
+### Day 4: Security Through Obscurity
+
+check the validity of room names.
+
 ---
 
 Environment
