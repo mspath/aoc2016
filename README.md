@@ -14,6 +14,10 @@ help finding the HQ of the Easter Bunny
 
 unlock the bathroom of the Easter Bunny HQ
 
+### Day 3: Squares With Three Sides
+
+help understand a design document.
+
 ---
 
 Environment
