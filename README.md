@@ -26,6 +26,14 @@ check the validity of room names.
 
 discover a password.
 
+### Day 6: Signal and Noise
+
+error correct your communication with Santa.
+
+### Day 7: Internet Protocol Version 7
+
+verify IPv7.
+
 ---
 
 Environment
