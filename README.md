@@ -34,6 +34,14 @@ error correct your communication with Santa.
 
 verify IPv7.
 
+### Day 8: Two-Factor Authentication
+
+display pixels on a little screen.
+
+### Day 9: Explosives in Cyberspace
+
+understand a compression protocol.
+
 ---
 
 Environment
