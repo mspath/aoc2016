@@ -42,6 +42,10 @@ display pixels on a little screen.
 
 understand a compression protocol.
 
+### Day 10: Balance Bots
+
+understand a system of bots.
+
 ---
 
 Environment
