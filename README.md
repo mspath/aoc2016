@@ -46,6 +46,10 @@ understand a compression protocol.
 
 understand a system of bots.
 
+### Day 12: Leonardo's Monorail
+
+write an assembunny routine.
+
 ---
 
 Environment
