@@ -50,6 +50,14 @@ understand a system of bots.
 
 write an assembunny routine.
 
+### Day 13: A Maze of Twisty Little Cubicles
+
+find the shortest path in a maze. incomplete.
+
+### Day 14: One-Time Pad
+
+generate a one-time key.
+
 ---
 
 Environment
