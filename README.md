@@ -62,9 +62,9 @@ generate a one-time key.
 
 Environment
 
-- Kotlin 1.7.0
+- Kotlin 1.7.10
 - Intellij 2021.3.3
 
 ---
 
-updated: 2022-07-06
+updated: 2022-08-21
