@@ -52,7 +52,7 @@ write an assembunny routine.
 
 ### Day 13: A Maze of Twisty Little Cubicles
 
-find the shortest path in a maze. incomplete.
+find the shortest path in a maze.
 
 ### Day 14: One-Time Pad
 

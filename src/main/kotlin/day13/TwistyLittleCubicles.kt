@@ -4,6 +4,7 @@ import java.util.PriorityQueue
 
 fun main() {
     breakfast()
+    lunch()
 }
 
 data class Point(val x: Int, val y: Int, var cost: Int = Int.MAX_VALUE) {
@@ -48,10 +49,10 @@ data class Point(val x: Int, val y: Int, var cost: Int = Int.MAX_VALUE) {
     }
 }
 
-// incomplete
+// update 2022-12-05: complete. the only mistake was to start at 0, 0 instead of 1, 1...
 fun breakfast() {
     Point.printGrid(50)
-    val start = Point(0, 0, 0)
+    val start = Point(1, 1, 0)
     val end = Pair(31, 39)
     val visited: MutableSet<Pair<Int, Int>> = mutableSetOf()
     val compareByCost: Comparator<Point> = compareBy { it.cost }
@@ -64,6 +65,31 @@ fun breakfast() {
             println(next)
         }
         println(visited)
+        val neighbors = next.neighbors().filterNot { Pair(it.x, it.y) in visited }
+        neighbors.forEach { neighbor ->
+            neighbor.cost = next.cost + 1
+            queue.add(neighbor)
+        }
+    }
+}
+
+fun lunch() {
+    Point.printGrid(50)
+    val max = 51
+    val start = Point(1, 1, 0)
+    val visited: MutableSet<Pair<Int, Int>> = mutableSetOf()
+    val compareByCost: Comparator<Point> = compareBy { it.cost }
+    val queue: PriorityQueue<Point> = PriorityQueue(compareByCost)
+    queue.add(start)
+    while (queue.isNotEmpty()) {
+        val next = queue.poll()
+        if (next.cost == max) {
+            println(next)
+            println(visited.size)
+            println(visited)
+            break
+        }
+        visited.add(Pair(next.x, next.y))
         val neighbors = next.neighbors().filterNot { Pair(it.x, it.y) in visited }
         neighbors.forEach { neighbor ->
             neighbor.cost = next.cost + 1
