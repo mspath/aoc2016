@@ -62,14 +62,14 @@ generate a one-time key.
 
 Environment
 
-- Kotlin 1.8.0
-- Intellij 2022.2.4
+- Kotlin 1.8.10
+- Intellij 2022.3.3
 
 ---
 
 ```
 language: kotlin
-repo: aoc2017
+repo: aoc2016
 status: active
-updated: 2023-01-28
+updated: 2023-03-19
 ```
